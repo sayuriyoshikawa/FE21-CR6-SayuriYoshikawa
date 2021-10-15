@@ -1,5 +1,5 @@
 .background {
-    font-family: 'Palatino Linotype',Georgia, serif;
+    font-family: "Palatino Linotype", Georgia, serif;
     background-image: url(../../assets/img/cart.jpg);
     z-index: -1;
     height: 55vh;
@@ -12,17 +12,15 @@
     position: relative;
     top: 22vw;
     left: 20vw;
-    
 }
 .title h1 {
-    color:white;
+    color: white;
     font-size: 6vw;
     opacity: 0.8;
     text-shadow: 5px 5px 7px rgb(168, 167, 167);
-
 }
 .booking {
-    font-family: 'Palatino Linotype',Georgia, serif;
+    font-family: "Palatino Linotype", Georgia, serif;
     text-shadow: 5px 5px 7px rgb(168, 167, 167);
     text-align: center;
     margin-bottom: 1vw;
@@ -33,18 +31,17 @@
     border-radius: 5%;
     width: 60vw;
     margin: auto;
-    font-family: 'Palatino Linotype',Georgia, serif;
+    font-family: "Palatino Linotype", Georgia, serif;
 }
 
-
-form, ol, .sum {
-width: 30vw;
-margin:5vw auto;
-
+form,
+ol,
+.sum {
+    width: 30vw;
+    margin: 5vw auto;
 }
 .sum {
     text-align: right;
     width: 30vw;
-margin:0 auto;
+    margin: 0 auto;
 }
-

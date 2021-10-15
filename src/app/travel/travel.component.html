@@ -1,24 +1,24 @@
 <div class="background">
     <div class="title">
-<h1>Travel</h1>
-</div>
+        <h1>Travel</h1>
+    </div>
 </div>
 
 <div class="travelOffer">
-<h1>Our travel offer</h1>
-<div class="contents d-flex flex-wrap px-4  justify-content-center">
-    <div *ngFor="let product of products ; index as productId">
+    <h1>Our travel offer</h1>
+    <div class="contents d-flex flex-wrap px-4  justify-content-center">
+        <div *ngFor="let product of products ; index as productId">
 
-        <div class="card shadow m-4 border-0" style="width: 18rem;">
-            <img src="assets/img/{{ product.img }}" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h4 class="card-title fw-bold"> {{product.destination}}</h4>
-                <p class="card-text "> {{product.description}}</p>
-                <p class="card-text fw-bold">Duration: {{product.duration}}</p>
-                <p class="card-text ">Price: {{product.price | currency: "EUR"}}</p>
-                <a class="btn btn-primary" (click)="addToCart(product)">Book now</a>
+            <div class="card shadow m-4 border-0" style="width: 18rem;">
+                <img src="assets/img/{{ product.img }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4 class="card-title fw-bold"> {{product.destination}}</h4>
+                    <p class="card-text "> {{product.description}}</p>
+                    <p class="card-text fw-bold">Duration: {{product.duration}}</p>
+                    <p class="card-text ">Price: {{product.price | currency: "EUR"}}</p>
+                    <a class="btn btn-primary" (click)="addToCart(product)">Book now</a>
+                </div>
             </div>
         </div>
     </div>
-</div>
 </div>

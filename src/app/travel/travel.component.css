@@ -1,7 +1,5 @@
-
-
 .background {
-    font-family: 'Palatino Linotype',Georgia, serif;
+    font-family: "Palatino Linotype", Georgia, serif;
     background-image: url(../../assets/img/travel.jpg);
     z-index: -1;
     height: 70vh;
@@ -14,24 +12,21 @@
     position: relative;
     top: 20vw;
     left: 40vw;
-    
 }
 
 .title h1 {
-    color:white;
+    color: white;
     font-size: 20vw;
     opacity: 0.8;
     text-shadow: 5px 5px 7px rgb(168, 167, 167);
-
 }
 
-.card :hover{
-    background-color:rgb(226, 243, 255);
+.card :hover {
+    background-color: rgb(226, 243, 255);
 }
-
 
 .travelOffer {
-    font-family: 'Palatino Linotype',Georgia, serif;
+    font-family: "Palatino Linotype", Georgia, serif;
 }
 
 .travelOffer h1 {

@@ -1,39 +1,28 @@
-
 .hero {
     background-image: url("../../assets/img/home.jpg");
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: -10px;
     z-index: -1;
-    background-repeat: none;
-    pointer-events: none;
+    height: 100vh;
+    position: relative;
+    top: -14vh;
 }
 
-.text{
-    z-index: 2 !important;
+.text {
+    z-index: 2 ;
     color: white;
     position: relative;
-    top:24vw;
+    top: 24vw;
     left: 20vw;
     text-shadow: 5px 5px 7px rgb(168, 167, 167);
 }
 
-
 .text h1 {
-    font-family:  'Palatino Linotype',Georgia, serif;
+    font-family: "Palatino Linotype", Georgia, serif;
     font-size: 4vw;
 }
 
-
-
-
-
 .card {
-    font-family:  'Palatino Linotype',Georgia, serif;
+    font-family: "Palatino Linotype", Georgia, serif;
     position: relative;
-    top: 90vh;
     width: 90vw;
     background-color: rgb(188, 214, 221);
 }
