@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { CartService } from '../cart.service';
-import { products } from '../products';
 @Component({
   selector: 'app-cart',
   templateUrl: './cart.component.html',
@@ -12,10 +11,11 @@ items: any;
 sum: any;
 product:any;
   checkoutForm= new FormGroup({
-    name: new FormControl(""),
-    address: new FormControl("")
+    name: new FormControl("", Validators.required),
+    address: new FormControl("", Validators.required),
+    check: new FormControl("", Validators.required)
   });
-
+  
   constructor(private cartService: CartService) {
    }
 
@@ -25,9 +25,12 @@ product:any;
   }
 
   onSubmit(customerData: any) {
+    if(this.checkoutForm.valid){
     console.warn("Your order has been submitted", customerData);
-
+    window.alert('Thank you very much! Your order has been submitted.');
     this.items = this.cartService.clearCart();
     this.checkoutForm.reset();
+    this.sum = 0;
+  }
   }
 }
