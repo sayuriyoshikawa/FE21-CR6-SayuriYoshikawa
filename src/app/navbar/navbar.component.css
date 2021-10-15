@@ -1,0 +1,21 @@
+.container {
+    padding-top: 3vw;
+   
+}
+
+.nav {
+    color: white;
+    font-size: 2vw;
+   
+}
+
+.logo {
+    padding-right: 20vw;
+    font-size: 3vw;
+    padding-top:0px;
+}
+
+.cart {
+    color: red;
+   
+}

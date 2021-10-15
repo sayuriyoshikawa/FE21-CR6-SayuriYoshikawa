@@ -1,0 +1,54 @@
+<div class="background">
+  <div class="title">
+    <h1>Enjoy your trip with us!</h1>
+  </div>
+</div>
+
+
+<h1 class="booking">Your booking</h1>
+<div class="cart">
+
+  <ol class="list-group list-group-numbered pt-5">
+    <div class="cart-item" *ngFor="let item of items">
+      <div *ngIf="item">
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <span class="fw-bold">{{item.destination}} </span>
+            <span> {{item.duration}}</span>
+          </div>
+          <span class="badge bg-primary rounded-pill">{{item.price | currency:"EUR" }}</span>
+
+        </li>
+      </div>
+    </div>
+  </ol>
+
+  <div class="sum">
+    <h5 class="text-right">Your booking Sum : {{ sum | currency:"EUR" }}</h5>
+    <p class="text-danger">More than €200.00, you'll get 10% discount!<br>
+      More than €500.00, you'll get 20% discount!!</p>
+  </div>
+
+
+
+  <br>
+  <br>
+
+  <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+
+    <div class="mb-3">
+      <label for="name" class="form-label">Name</label>
+      <input type="text" id="name" formControlName="name" class="form-control">
+
+    </div>
+    <div class="mb-3">
+      <label for="address" class="form-label">Phone nbumber</label>
+      <input id="address" type="text" formControlName="address" class="form-control">
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">I agree to the term.</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Purchase</button>
+  </form>
+</div>

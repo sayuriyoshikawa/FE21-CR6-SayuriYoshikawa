@@ -1,0 +1,10 @@
+h1 {
+    position: relative;
+    top: 100vh;
+    text-align: center;
+    background-color: thistle;
+    height: 6vw;
+    padding-top: 1vw;
+    color:white;
+    text-shadow: 5px 5px 7px rgb(168, 167, 167);
+}
